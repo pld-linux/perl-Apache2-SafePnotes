@@ -7,7 +7,7 @@
 %define	pdir	Apache2
 %define	pnam	SafePnotes
 Summary:	Apache2::SafePnotes - a safer replacement for Apache2::RequestUtil::pnotes
-Summary(pl):	Apache2::SafePnotes - bezpieczniejszy zamiennik Apache2::RequestUtil::pnotes
+Summary(pl.UTF-8):   Apache2::SafePnotes - bezpieczniejszy zamiennik Apache2::RequestUtil::pnotes
 Name:		perl-Apache2-SafePnotes
 Version:	0.03
 Release:	2
@@ -31,11 +31,11 @@ Apache2::Connection::pnotes (available since mod_perl 2.0.3).
 These functions store perl variables making them accessible from
 various phases of the Apache request cycle.
 
-%description -l pl
-Ten modu³ usuwa problem z Apache2::RequestRec::pnotes i
-Apache2::Connection::pnotes (dostêpnymi w mod_perlu od wersji 2.0.3).
-Funkcje te zapisuj± zmienne perlowe czyni±c je dostêpnymi z ró¿nych
-faz cyklu ¿±dania Apache'a.
+%description -l pl.UTF-8
+Ten moduÅ‚ usuwa problem z Apache2::RequestRec::pnotes i
+Apache2::Connection::pnotes (dostÄ™pnymi w mod_perlu od wersji 2.0.3).
+Funkcje te zapisujÄ… zmienne perlowe czyniÄ…c je dostÄ™pnymi z rÃ³Å¼nych
+faz cyklu Å¼Ä…dania Apache'a.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
