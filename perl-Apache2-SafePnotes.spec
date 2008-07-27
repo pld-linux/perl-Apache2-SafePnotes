@@ -10,7 +10,7 @@ Summary:	Apache2::SafePnotes - a safer replacement for Apache2::RequestUtil::pno
 Summary(pl.UTF-8):	Apache2::SafePnotes - bezpieczniejszy zamiennik Apache2::RequestUtil::pnotes
 Name:		perl-Apache2-SafePnotes
 Version:	0.03
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
