@@ -1,11 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	apxs	/usr/sbin/apxs
 %define	pdir	Apache2
 %define	pnam	SafePnotes
+%include	/usr/lib/rpm/macros.perl
 Summary:	Apache2::SafePnotes - a safer replacement for Apache2::RequestUtil::pnotes
 Summary(pl.UTF-8):	Apache2::SafePnotes - bezpieczniejszy zamiennik Apache2::RequestUtil::pnotes
 Name:		perl-Apache2-SafePnotes
@@ -16,6 +16,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ef1c270b94997042be2300848c0d50d3
+URL:		http://search.cpan.org/dist/Apache2-SafePnotes/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -27,9 +28,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module cures a problem with Apache2::RequestRec::pnotes and
-Apache2::Connection::pnotes (available since mod_perl 2.0.3).
-These functions store perl variables making them accessible from
-various phases of the Apache request cycle.
+Apache2::Connection::pnotes (available since mod_perl 2.0.3). These
+functions store perl variables making them accessible from various
+phases of the Apache request cycle.
 
 %description -l pl.UTF-8
 Ten moduł usuwa problem z Apache2::RequestRec::pnotes i
