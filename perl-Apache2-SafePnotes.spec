@@ -5,7 +5,6 @@
 %define	apxs	/usr/sbin/apxs
 %define	pdir	Apache2
 %define	pnam	SafePnotes
-%include	/usr/lib/rpm/macros.perl
 Summary:	Apache2::SafePnotes - a safer replacement for Apache2::RequestUtil::pnotes
 Summary(pl.UTF-8):	Apache2::SafePnotes - bezpieczniejszy zamiennik Apache2::RequestUtil::pnotes
 Name:		perl-Apache2-SafePnotes
